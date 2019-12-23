@@ -21,14 +21,12 @@ b> Generate Data <br />
  *step 3: check for login page <br />
 
  *step 4: Open terminal 2 and run "mix test"  <br />
- <Description: Running mix test seeds our ETS table with data (reference- Project 4.1),  <br />
+ <Description: Running mix test seeds our ETS table with data,  <br />
  i.e. unique username generation, tweets, subscriptions, notifications> <br />
 
  *step 5: After the mix test is successful -> copy the username and password specified in terminal 2 and paste it in browser to use the web interface. <br />
 
  *step 6: Login from browser into "Tweety"  <br />
- <From now onwards the Twitter clone application would be referred ad "Tweety".> <br />
-
 
 c> TWEETY Front Page  <br />
    =================
