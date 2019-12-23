@@ -1,4 +1,4 @@
-# "Tweety" : Twitter Clone using Server- Client Architecture with UI <br />
+# "TWEETY" : Twitter Clone using Server- Client Architecture with UI <br />
 
  Click to view setup and implementation video: <br />
  <a href= "https://youtu.be/F59tYGdZaIg" target= "_blank"> Tweety Implementation </a>
@@ -11,7 +11,7 @@ a> Setup <br />
 
  step 2: Run "make" to compile source from terminal <br />
 
-b> GENERATE DATA <br />
+b> Generate Data <br />
    =============
  
  *step 1: On Terminal 1 run "mix phx.server" <br />
@@ -30,7 +30,7 @@ b> GENERATE DATA <br />
  <From now onwards the Twitter clone application would be referred ad "Tweety".> <br />
 
 
-c> TWEETY FRONT PAGE  <br />
+c> TWEETY Front Page  <br />
    =================
 
  *step 7: Functionalities implemented in Tweety: <br />
@@ -45,7 +45,7 @@ c> TWEETY FRONT PAGE  <br />
  <Provided detailed description of functionalities and tweet format in document.> <br />
 
 
-d> CHECK FUNCTIONALITIES <br />
+d> Check Functionalities <br />
    =====================
 
  *step 8: Go to "Notifications" <br />
