@@ -1,7 +1,7 @@
 # "Tweety" : Twitter CLone using Server- CLient Architecture with UI <br />
 
-# Video link: <br />
-<a href= "https://youtu.be/F59tYGdZaIg" target= "_blank"> Here </a>
+Click to view setup and implementation video: <br />
+<a href= "https://youtu.be/F59tYGdZaIg" target= "_blank"> Tweety Implementation </a>
 <br />
 
 SETUP <br />
