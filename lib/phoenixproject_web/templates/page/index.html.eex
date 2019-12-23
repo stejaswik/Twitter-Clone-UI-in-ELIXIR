@@ -1,0 +1,152 @@
+
+<div id="myMain" style="display:none">
+	<ul style="font-size:20px;" align="center" class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+	  <li class="nav-item" >
+	    <a class="nav-link active" style="color:black" id="pills-home-tab" data-toggle="pill" href="#activities" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa fa-home fa-stack-1x aria-hidden='true'" style="display:inline;position:relative; width:24%"></i>Home</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="pills-profile-tab" style="color:black" data-toggle="pill" href="#tweet" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa fa-twitter-square fa-stack-1x aria-hidden='true'" style="display:inline;position:relative; width:24%"></i>Tweet</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="pills-contact-tab" style="color:black" data-toggle="pill" href="#subscribe" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa fa-users fa-stack-1x aria-hidden='true'" style="display:inline;position:relative; width:24%"></i>Subscribe</a>
+	  </li>
+	   <li class="nav-item">
+	    <a class="nav-link" id="pills-contact-tab" style="color:black" data-toggle="pill" href="#notifications" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa fa-bell fa-stack-1x aria-hidden='true'" style="display:inline;position:relative; width:24%"></i>Notifications</a>
+	  </li>
+	   <li class="nav-item">
+	    <a class="nav-link" id="pills-contact-tab" style="color:black" data-toggle="pill" href="#mentions" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa fa-pencil fa-stack-1x aria-hidden='true'" style="display:inline;position:relative; width:24%"></i>Mentions</a>
+	  </li>
+	  <li class="nav-item">
+
+	    <a class="nav-link" id="pills-contact-tab" style="color:black" data-toggle="pill" href="#hashtags" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa fa-hashtag fa-stack-1x aria-hidden='true'" style="display:inline;position:relative; width:24%"></i>Explore</a>
+	  </li>
+	</ul>
+	<div class="tab-content" id="pills-tabContent">
+	  <div class="tab-pane fade show active" id="activities" role="tabpanel" aria-labelledby="pills-hme-tab" >	
+	  	<table id="table_activities" align="center" width="900" border="1" align="left">
+		</table>  	
+	  </div>	
+	  <div class="tab-pane fade" id="tweet" role="tabpanel" aria-labelledby="pills-profile-tab">
+	  	<table id="table_tweet" align="center" width="900" border="1" align="left">
+		</table>
+	  </div>
+	  <div class="tab-pane fade" id="subscribe" role="tabpanel" aria-labelledby="pills-contact-tab"> 	
+		<table id="table_subscribe" align="center" width="900" border="1" align="left">
+		</table>  	
+	  </div>
+
+	  <div class="tab-pane fade" role="tabpanel" aria-labelledby="pills-contact-tab" id="hashtags">
+			<section>
+		  		<form id="live-search" class="styled" method="post">
+		      		<fieldset>
+		          		<input type="text" class="text-input" id="filter" placeholder="Query hashtags, usernames and tweets .. for ex: #runforfun" />
+		          		<span id="filter-count"></span>
+		      		</fieldset>
+		  		</form>
+		    	<nav>
+		        	<ul class="hashtagsearch" id="hashtaglist">
+		        	</ul>
+		    	</nav>
+			</section>
+	  </div> 
+
+	  <div class="tab-pane fade" role="tabpanel" aria-labelledby="pills-contact-tab" id="notifications">
+	  	<table id="table_notifications" align="center" width="900" border="1" align="left">
+		</table>  	
+	  </div>
+	  <div class="tab-pane fade" role="tabpanel" aria-labelledby="pills-contact-tab" id="mentions">
+	  	<table id="table_mentions" align="center" width="900" border="1" align="left">
+		</table>
+	  </div>
+	</div>
+</div>
+<style>
+
+	a:hover {
+  	
+  		background-color: lightcyan;
+	}
+
+	.nav-link.active {
+
+		background-color: white ! important;
+	}
+
+	.hide{
+
+		display:none;
+
+	}
+
+	#table_activities{
+
+		background-color:lightgrey;
+		align-content: left;
+		font-size:15px;
+
+	}
+
+	#filter {
+
+		border:2px;
+		border-color:black;
+		background-color:white;
+	}
+
+	#hashtaglist {
+		list-style-type:none;
+		border:1px solid black;
+		background-color:lightgrey;
+	}
+
+	#hashtags {
+
+		align-content: left;
+		font-size:15px;
+
+	}
+
+	#table_tweet{
+
+		background-color:lightgrey;
+		align-content: left;
+		font-size:15px;
+
+	}
+
+	#table_hashtags{
+
+		background-color:lightgrey;
+		align-content: left;
+		font-size:15px;	
+
+	}
+
+	#table_notifications{
+
+		background-color:lightgrey;
+		align-content: left;
+		font-size:15px;
+
+	}	
+
+	#table_mentions{
+
+		background-color:lightgrey;
+		align-content: left;
+		font-size:15px;
+
+	}
+
+	#table_subscribe{
+
+		background-color:lightgrey;
+		align-content: left;
+		font-size:15px;
+
+	}
+</style>
+      
+<div id="main"></div>
+
+

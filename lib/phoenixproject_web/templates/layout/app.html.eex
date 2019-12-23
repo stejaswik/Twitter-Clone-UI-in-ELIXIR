@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tweety</title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="background-color:lightblue;">
+    <header style="background:currentColor;">
+      <script>window.userToken = "<%= assigns[:user_token] %>";</script>
+      <div class=container>
+          <img height="100px" src="<%= Routes.static_path(@conn, "/images/bird.png") %>"/>
+          <span style="font-size:60px; color:lightblue; margin-top:39px ; text-align:left;">Tweety</span>
+          <span align="right" id="ourUser" style="font-size:25px; color:lightblue; margin-top:39px ; text-align:right; padding-left:50px"></span>
+          <button type="submit" id="logout" style="font-size:20px; color:lightblue; float:right;margin-top:39px; display:none" onclick="show()">Logout</button>
+      </div>
+    </header>
+    <main role="main" class="container">
+    <div id="myForm" style="display:inline">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="InputEmail" style="background-color: white" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="Password" style="background-color: white" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary" id="login">Login</button>
+    </div>
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+
+      function show()
+         {
+
+          document.getElementById("myForm").style.display="block"; 
+          document.getElementById("myMain").style.display="none";
+          document.getElementById("ourUser").style.display="none";
+          document.getElementById("logout").style.display="none";
+
+         } 
+
+       $(document).keypress(
+        function(event){
+          if (event.which == '13') {
+            event.preventDefault();
+          }
+        });  
+
+      function myFunction(id){
+
+          console.log(id)
+          var elem = document.getElementById(id).getAttribute("value");
+          alert(elem);
+          console.log(elem);
+          //alert(elem.value);
+          elem.setAttribute("style", "color:blue");
+      }
+
+    $(document).ready(function(){
+      $("#filter").keyup(function(){
+
+          // Retrieve the input field text and reset the count to zero
+          var filter = $(this).val(), count = 0;
+          console.log(filter);
+          $("nav ul[class='hashtagsearch'] li").each(function(){
+
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) 
+            {
+                $(this).hide();
+                count++;
+            }
+            else
+            {
+
+              $(this).show();
+              count++;
+            }
+
+          });
+
+       }) 
+    });   
+    </script>  
+
+  </body>
+</html>
