@@ -4,7 +4,8 @@
  <a href= "https://youtu.be/F59tYGdZaIg" target= "_blank"> Tweety Implementation </a>
  <br />
 
-a> SETUP <br />
+a> Setup <br />
+   =====
 
  step 1: Unzip the folder and go to the path where zip has been extracted /path/directory/  <br />
 
