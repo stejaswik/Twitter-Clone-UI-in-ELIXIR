@@ -1,9 +1,9 @@
-# "Tweety" : Twitter CLone using Server- CLient Architecture with UI 
-<br />
-# Video link: 
+# "Tweety" : Twitter CLone using Server- CLient Architecture with UI <br />
 
-https://youtu.be/F59tYGdZaIg
+# Video link: <br />
+<a href= "https://youtu.be/F59tYGdZaIg" target= "_blank"> Here </a>
 <br />
+
 SETUP <br />
 =====
 
@@ -48,7 +48,7 @@ h. logout <br />
 CHECK FUNCTIONALITIES <br />
 =====================
 
-*step 8: Go to "Notifications" ~~~~~>  <br />
+*step 8: Go to "Notifications" <br />
 
 a. It consists of all the tweets posted by the current user's subscribers along with <br />
 the tweets in which the current logged in user was mentioned. <br />
@@ -65,7 +65,7 @@ d. Every tweet in "Notifications" tab having the following format- <br />
 is posted by @abc user, who has mentioned the current user in their tweets. <br />
 Same tweet can be viewed under "Mentions" tab. <br />
 
-*step 9: Go to "Mentions" ~~~~~>  <br />
+*step 9: Go to "Mentions" <br />
 
 a. It consists of all the tweets mentioning the current user, every tweet has below format- <br />
 "User @abc has mentioned you in tweet <-- tweet -->" <br />
@@ -85,7 +85,7 @@ the retweet and corresponding username are updated on the server side and displa
 (current_user) has retweeted ----------> User <--@xyz--> has mentioned you in tweet <--tweet-->  							 <br />
 ---------------------------------------------------------------------------------------------------------------------------  <br />
 
-*step 10: Go to "Subscribe" ~~~~~>   <br />
+*step 10: Go to "Subscribe" <br />
 
 a. Click subscribe button for a random user "jfk", who has "SUBSCRIBE" box specified. <br />
 Go to phxserver running on Terminal 1 -> 
@@ -103,20 +103,20 @@ the current user unsubscription is updated on the server side and displayed on t
 (current_user) unsubscribed ----------> (lmn)																				<br />
 --------------------------------------------------------------------------------------------------------------------------	<br />
 
-*step 11: Go to "Explore" ~~~~~>  <br />
+*step 11: Go to "Explore" <br />
 
 Search for hashtags/ usernames -> all the tweets containing the specified hashtags and usernames are displayed.        <br />
 
-*step 12: Log out  ~~~~~>       <br />
+*step 12: Log out   <br />
 
 a. Any login credential other than the one provided by "mix test" in terminal 2, are considered INVALID -           <br />
 An alert pops up with the "Invalid Credentials" message. <br />
 
 b. We can check that the content and updated activities are retained even after logout. <It can be cross checked> <br />
 
- ````````````````````````````````````````````````````````````````````````````````````````````````````````` <br />
-| *All the above functionalities are mentioned in the document along with screenshots.|                    <br />
- ````````````````````````````````````````````````````````````````````````````````````````````````````````` <br />
+ ````````````````````````````````````````````````````````````````````````````````````````````````````````` 
+| *All the above functionalities are mentioned in the document along with screenshots.|                    
+ ````````````````````````````````````````````````````````````````````````````````````````````````````````` 
 
 
 
